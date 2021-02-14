@@ -222,6 +222,20 @@ namespace WindowsFormsApp2
             newForm2.Show();
         }
 
+        private void button17_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Число1 = Convert.ToDouble(textBox1.Text);
+                Число1 = (-1) * Число1;
+                textBox1.Text = Число1.ToString();
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(a.ToString());
+            }
+        }
+        
         private void ОпределениеКвадратаЧисла(object sender,EventArgs e)
         {
             try

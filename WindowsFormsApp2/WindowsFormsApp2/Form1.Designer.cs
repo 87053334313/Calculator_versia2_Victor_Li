@@ -49,17 +49,18 @@ namespace WindowsFormsApp2
             this.button16 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.видКалькулятораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.инженерныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.простойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.переходДляКвадратногоУравненияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonStepen = new System.Windows.Forms.Button();
             this.buttonZapyataya = new System.Windows.Forms.Button();
             this.buttonKoren = new System.Windows.Forms.Button();
             this.buttonObratnoeZnachenie = new System.Windows.Forms.Button();
             this.buttonKvadratChisla = new System.Windows.Forms.Button();
-            this.видКалькулятораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.инженерныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.простойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.buttonFactorial = new System.Windows.Forms.Button();
-            this.переходДляКвадратногоУравненияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button17 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,7 +215,7 @@ namespace WindowsFormsApp2
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(338, 93);
+            this.button16.Location = new System.Drawing.Point(338, 358);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(137, 48);
             this.button16.TabIndex = 16;
@@ -240,6 +241,36 @@ namespace WindowsFormsApp2
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.выходToolStripMenuItem.Text = "выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // видКалькулятораToolStripMenuItem
+            // 
+            this.видКалькулятораToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.инженерныйToolStripMenuItem,
+            this.простойToolStripMenuItem});
+            this.видКалькулятораToolStripMenuItem.Name = "видКалькулятораToolStripMenuItem";
+            this.видКалькулятораToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.видКалькулятораToolStripMenuItem.Text = "вид калькулятора";
+            // 
+            // инженерныйToolStripMenuItem
+            // 
+            this.инженерныйToolStripMenuItem.Name = "инженерныйToolStripMenuItem";
+            this.инженерныйToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.инженерныйToolStripMenuItem.Text = "инженерный";
+            this.инженерныйToolStripMenuItem.Click += new System.EventHandler(this.инженерныйToolStripMenuItem_Click);
+            // 
+            // простойToolStripMenuItem
+            // 
+            this.простойToolStripMenuItem.Name = "простойToolStripMenuItem";
+            this.простойToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.простойToolStripMenuItem.Text = "простой";
+            this.простойToolStripMenuItem.Click += new System.EventHandler(this.простойToolStripMenuItem_Click);
+            // 
+            // переходДляКвадратногоУравненияToolStripMenuItem
+            // 
+            this.переходДляКвадратногоУравненияToolStripMenuItem.Name = "переходДляКвадратногоУравненияToolStripMenuItem";
+            this.переходДляКвадратногоУравненияToolStripMenuItem.Size = new System.Drawing.Size(218, 20);
+            this.переходДляКвадратногоУравненияToolStripMenuItem.Text = "переход для квадратного уравнения";
+            this.переходДляКвадратногоУравненияToolStripMenuItem.Click += new System.EventHandler(this.переходДляКвадратногоУравненияToolStripMenuItem_Click);
             // 
             // buttonStepen
             // 
@@ -291,29 +322,6 @@ namespace WindowsFormsApp2
             this.toolTip1.SetToolTip(this.buttonKvadratChisla, "выведется сразу число в квадрате ");
             this.buttonKvadratChisla.UseVisualStyleBackColor = true;
             // 
-            // видКалькулятораToolStripMenuItem
-            // 
-            this.видКалькулятораToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.инженерныйToolStripMenuItem,
-            this.простойToolStripMenuItem});
-            this.видКалькулятораToolStripMenuItem.Name = "видКалькулятораToolStripMenuItem";
-            this.видКалькулятораToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
-            this.видКалькулятораToolStripMenuItem.Text = "вид калькулятора";
-            // 
-            // инженерныйToolStripMenuItem
-            // 
-            this.инженерныйToolStripMenuItem.Name = "инженерныйToolStripMenuItem";
-            this.инженерныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.инженерныйToolStripMenuItem.Text = "инженерный";
-            this.инженерныйToolStripMenuItem.Click += new System.EventHandler(this.инженерныйToolStripMenuItem_Click);
-            // 
-            // простойToolStripMenuItem
-            // 
-            this.простойToolStripMenuItem.Name = "простойToolStripMenuItem";
-            this.простойToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.простойToolStripMenuItem.Text = "простой";
-            this.простойToolStripMenuItem.Click += new System.EventHandler(this.простойToolStripMenuItem_Click);
-            // 
             // toolTip1
             // 
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
@@ -330,12 +338,15 @@ namespace WindowsFormsApp2
             this.buttonFactorial.UseVisualStyleBackColor = true;
             this.buttonFactorial.Click += new System.EventHandler(this.buttonFactorial_Click);
             // 
-            // переходДляКвадратногоУравненияToolStripMenuItem
+            // button17
             // 
-            this.переходДляКвадратногоУравненияToolStripMenuItem.Name = "переходДляКвадратногоУравненияToolStripMenuItem";
-            this.переходДляКвадратногоУравненияToolStripMenuItem.Size = new System.Drawing.Size(218, 20);
-            this.переходДляКвадратногоУравненияToolStripMenuItem.Text = "переход для квадратного уравнения";
-            this.переходДляКвадратногоУравненияToolStripMenuItem.Click += new System.EventHandler(this.переходДляКвадратногоУравненияToolStripMenuItem_Click);
+            this.button17.Location = new System.Drawing.Point(338, 93);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(137, 48);
+            this.button17.TabIndex = 24;
+            this.button17.Text = "+-";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click_1);
             // 
             // Form1
             // 
@@ -343,6 +354,7 @@ namespace WindowsFormsApp2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(650, 450);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.buttonFactorial);
             this.Controls.Add(this.buttonKvadratChisla);
             this.Controls.Add(this.buttonObratnoeZnachenie);
@@ -415,6 +427,7 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Button buttonFactorial;
         private System.Windows.Forms.ToolStripMenuItem переходДляКвадратногоУравненияToolStripMenuItem;
+        private System.Windows.Forms.Button button17;
     }
 }
 

@@ -9,3 +9,14 @@ C:\Users\VictorLi\Desktop\MyCalculator\WindowsFormsApp2\WindowsFormsApp2\obj\Deb
 C:\Users\VictorLi\Desktop\MyCalculator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\VictorLi\Desktop\MyCalculator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\VictorLi\Desktop\MyCalculator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojAssemblyReference.cache
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\VictorLi\Desktop\MyCalculator  endvrsion Vctor Li\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
