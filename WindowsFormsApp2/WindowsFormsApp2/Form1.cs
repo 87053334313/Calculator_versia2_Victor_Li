@@ -226,9 +226,14 @@ namespace WindowsFormsApp2
         {
             try
             {
-                Число1 = Convert.ToDouble(textBox1.Text);
-                Число1 = (-1) * Число1;
-                textBox1.Text = Число1.ToString();
+
+                double ЧислоСминусом;
+                    ЧислоСминусом = Convert.ToDouble(textBox1.Text);
+                    
+                    ЧислоСминусом = (-1) * ЧислоСминусом;
+                    textBox1.Text = ЧислоСминусом.ToString();
+                
+               
             }
             catch (Exception a)
             {
