@@ -94,7 +94,9 @@ namespace WindowsFormsApp2
                     Результат = Число1 / Число2;
                 if (Znak == "Возведение в степень")
                 {
+                    
                     Результат = Math.Pow(Число1, Число2);
+                    
                 }
 
 
@@ -121,10 +123,14 @@ namespace WindowsFormsApp2
         {
             try
             {
+                
                 Число1 = Convert.ToDouble(textBox1.Text);
-                Button Кнопка = (Button)sender;
-                Znak = Кнопка.Text;
-                Начало_Ввода = true;
+                
+                    Button Кнопка = (Button)sender;
+                    Znak = Кнопка.Text;
+                    Начало_Ввода = true;
+                
+                
             }
             catch (Exception a)
             {
@@ -240,7 +246,29 @@ namespace WindowsFormsApp2
                 MessageBox.Show(a.ToString());
             }
         }
-        
+
+        private void buttonKubKoren_Click(object sender, EventArgs e)
+        {
+           
+            double a= Convert.ToDouble(textBox1.Text);
+            if (a >= 0)
+            {
+                double kubkor = Math.Pow(a, 1.0 / 3.0);
+                textBox1.Text = Convert.ToString(kubkor);
+            }
+            else if (a < 0)
+            {
+                a = a * (-1);
+                double kubkor = -1*Math.Pow(a, 1.0 / 3.0);
+                textBox1.Text = Convert.ToString(kubkor);
+            }
+        }
+
+        private void buttonStepen_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void ОпределениеКвадратаЧисла(object sender,EventArgs e)
         {
             try

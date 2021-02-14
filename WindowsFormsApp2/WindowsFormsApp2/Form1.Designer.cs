@@ -61,6 +61,7 @@ namespace WindowsFormsApp2
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.buttonFactorial = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.buttonKubKoren = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -215,7 +216,7 @@ namespace WindowsFormsApp2
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(338, 358);
+            this.button16.Location = new System.Drawing.Point(188, 381);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(137, 48);
             this.button16.TabIndex = 16;
@@ -281,6 +282,7 @@ namespace WindowsFormsApp2
             this.buttonStepen.Text = "Возведение в степень";
             this.toolTip1.SetToolTip(this.buttonStepen, "после нажатия введи необходимую степерь затем нажми равно");
             this.buttonStepen.UseVisualStyleBackColor = true;
+            this.buttonStepen.Click += new System.EventHandler(this.buttonStepen_Click);
             // 
             // buttonZapyataya
             // 
@@ -329,7 +331,7 @@ namespace WindowsFormsApp2
             // 
             // buttonFactorial
             // 
-            this.buttonFactorial.Location = new System.Drawing.Point(526, 358);
+            this.buttonFactorial.Location = new System.Drawing.Point(526, 342);
             this.buttonFactorial.Name = "buttonFactorial";
             this.buttonFactorial.Size = new System.Drawing.Size(105, 48);
             this.buttonFactorial.TabIndex = 23;
@@ -348,12 +350,24 @@ namespace WindowsFormsApp2
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click_1);
             // 
+            // buttonKubKoren
+            // 
+            this.buttonKubKoren.Location = new System.Drawing.Point(526, 396);
+            this.buttonKubKoren.Name = "buttonKubKoren";
+            this.buttonKubKoren.Size = new System.Drawing.Size(105, 53);
+            this.buttonKubKoren.TabIndex = 25;
+            this.buttonKubKoren.Text = "изелечение кубического корня";
+            this.toolTip1.SetToolTip(this.buttonKubKoren, "можно также вводить и отрицательные значения");
+            this.buttonKubKoren.UseVisualStyleBackColor = true;
+            this.buttonKubKoren.Click += new System.EventHandler(this.buttonKubKoren_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(650, 450);
+            this.Controls.Add(this.buttonKubKoren);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.buttonFactorial);
             this.Controls.Add(this.buttonKvadratChisla);
@@ -428,6 +442,7 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Button buttonFactorial;
         private System.Windows.Forms.ToolStripMenuItem переходДляКвадратногоУравненияToolStripMenuItem;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button buttonKubKoren;
     }
 }
 

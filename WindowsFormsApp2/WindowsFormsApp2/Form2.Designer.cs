@@ -58,6 +58,7 @@ namespace WindowsFormsApp2
             this.label1.Size = new System.Drawing.Size(405, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Расчет квадратного уравнения";
+            this.toolTip1.SetToolTip(this.label1, "в качестве разделителя используй запятую");
             // 
             // label2
             // 
@@ -230,6 +231,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form2";
