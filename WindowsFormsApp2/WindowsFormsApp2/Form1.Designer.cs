@@ -60,8 +60,8 @@ namespace WindowsFormsApp2
             this.buttonKvadratChisla = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.buttonFactorial = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
             this.buttonKubKoren = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -216,7 +216,8 @@ namespace WindowsFormsApp2
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(188, 381);
+            this.button16.ForeColor = System.Drawing.Color.Red;
+            this.button16.Location = new System.Drawing.Point(181, 372);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(137, 48);
             this.button16.TabIndex = 16;
@@ -340,16 +341,6 @@ namespace WindowsFormsApp2
             this.buttonFactorial.UseVisualStyleBackColor = true;
             this.buttonFactorial.Click += new System.EventHandler(this.buttonFactorial_Click);
             // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(338, 93);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(137, 48);
-            this.button17.TabIndex = 24;
-            this.button17.Text = "+-";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click_1);
-            // 
             // buttonKubKoren
             // 
             this.buttonKubKoren.Location = new System.Drawing.Point(526, 396);
@@ -360,6 +351,16 @@ namespace WindowsFormsApp2
             this.toolTip1.SetToolTip(this.buttonKubKoren, "можно также вводить и отрицательные значения");
             this.buttonKubKoren.UseVisualStyleBackColor = true;
             this.buttonKubKoren.Click += new System.EventHandler(this.buttonKubKoren_Click);
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(338, 93);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(137, 48);
+            this.button17.TabIndex = 24;
+            this.button17.Text = "+-";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click_1);
             // 
             // Form1
             // 

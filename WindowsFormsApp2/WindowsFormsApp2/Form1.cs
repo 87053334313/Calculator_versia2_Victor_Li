@@ -43,7 +43,7 @@ namespace WindowsFormsApp2
             this.button11.Click += new System.EventHandler(this.РАВНО);
             this.button16.Click += new System.EventHandler(this.Очистить);
             this.buttonStepen.Click += new System.EventHandler(this.Stepen);
-            this.buttonZapyataya.Click += new System.EventHandler(this.ЦИФРА);
+            this.buttonZapyataya.Click += new System.EventHandler(this.ЦИФРА_1);
             this.buttonKoren.Click += new System.EventHandler(this.КвадратныйКорень);
             this.buttonObratnoeZnachenie.Click += new System.EventHandler(this.ОбратноеЗначение);
             this.buttonKvadratChisla.Click += new System.EventHandler(this.ОпределениеКвадратаЧисла);
@@ -55,6 +55,21 @@ namespace WindowsFormsApp2
             if (Начало_Ввода == true)
             {
                 textBox1.Text = Digit;
+                Начало_Ввода = false;
+                return;
+            }
+            if (Начало_Ввода == false)
+            {
+                textBox1.Text = textBox1.Text + Digit;
+            }
+        }
+        private void ЦИФРА_1(object sender, EventArgs e)
+        {
+            Button Кнопка = (Button)sender;
+            string Digit = Кнопка.Text;
+            if (Начало_Ввода == true)
+            {
+                textBox1.Text ="0"+ Digit;
                 Начало_Ввода = false;
                 return;
             }
