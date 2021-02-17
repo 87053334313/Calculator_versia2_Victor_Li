@@ -65,18 +65,30 @@ namespace WindowsFormsApp2
         }
         private void ЦИФРА_1(object sender, EventArgs e)
         {
+
             Button Кнопка = (Button)sender;
             string Digit = Кнопка.Text;
-            if (Начало_Ввода == true)
-            {
-                textBox1.Text ="0"+ Digit;
-                Начало_Ввода = false;
-                return;
-            }
-            if (Начало_Ввода == false)
-            {
-                textBox1.Text = textBox1.Text + Digit;
-            }
+           
+              if (Начало_Ввода == true)
+                {
+                    textBox1.Text ="0"+ Digit;
+                    Начало_Ввода = false;
+                    return;
+                }
+                if (Начало_Ввода == false)
+                {
+                    string strForZap = textBox1.Text;
+                    if (strForZap.Contains(','))
+                    {
+                        MessageBox.Show("У тебя уже есть запятая");
+
+                    }
+                    else
+                    {
+                        textBox1.Text = textBox1.Text + Digit;
+                    }
+                }
+           
         }
         private void ОПЕРАЦИЯ(object sender, EventArgs e)
         {
@@ -93,33 +105,72 @@ namespace WindowsFormsApp2
                 Начало_Ввода = true;
             }
         }
+        public static double Число4;
+        public static string SuperZnak;
         private void РАВНО(object sender,EventArgs e)
         {
             try
             {
+                
                 double Результат = 0;
-                Число2 = Double.Parse(textBox1.Text);
-                if (Znak == "+")
-                    Результат = Число1 + Число2;
-                if (Znak == "-")
-                    Результат = Число1 - Число2;
-                if (Znak == "*")
-                    Результат = Число1 * Число2;
-                if (Znak == "/")
-                    Результат = Число1 / Число2;
-                if (Znak == "Возведение в степень")
+                
+                if (Znak == null)
                 {
-                    
-                    Результат = Math.Pow(Число1, Число2);
-                    
+
+                    if (SuperZnak == "+")
+                    {
+                        Число4 = Число2;
+                        Результат = Число1 + Число4;
+                        textBox1.Text = Результат.ToString();
+                        Число1 = Результат;
+                    }
+                    else if (SuperZnak == "-")
+                    {
+                        Число4 = Число2;
+                        Результат = Число1 - Число4;
+                        textBox1.Text = Результат.ToString();
+                        Число1 = Результат;
+                    }
+                    else if (SuperZnak == "*")
+                    {
+                        Число4 = Число2;
+                        Результат = Число1 * Число4;
+                        textBox1.Text = Результат.ToString();
+                        Число1 = Результат;
+                    }
+                    else if (SuperZnak == "/")
+                    {
+                        Число4 = Число2;
+                        Результат = Число1 / Число4;
+                        textBox1.Text = Результат.ToString();
+                        Число1 = Результат;
+                    }
+
                 }
+                else
+                {
+                    Число2 = Double.Parse(textBox1.Text);
+                    if (Znak == "+")
+                    { 
+                        Результат = Число1 + Число2;
+                        SuperZnak = Znak;
+                    }
+                    if (Znak == "-")
+                    { Результат = Число1 - Число2; SuperZnak = Znak; }
+                    if (Znak == "*")
+                    { Результат = Число1 * Число2; SuperZnak = Znak; }
+                    if (Znak == "/")
+                    { Результат = Число1 / Число2; SuperZnak = Znak; }
+                    if (Znak == "Возведение в степень")
+                    {
+                        Результат = Math.Pow(Число1, Число2); SuperZnak = Znak;
+                    }
 
-
-
-                Znak = null;
-                textBox1.Text = Результат.ToString();
-                Число1 = Результат;
-                Начало_Ввода = true;
+                    Znak = null;
+                    textBox1.Text = Результат.ToString();
+                    Число1 = Результат;
+                    Начало_Ввода = true;
+                }
             }
             catch(Exception a)
             {
@@ -280,6 +331,11 @@ namespace WindowsFormsApp2
         }
 
         private void buttonStepen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonZapyataya_Click(object sender, EventArgs e)
         {
 
         }

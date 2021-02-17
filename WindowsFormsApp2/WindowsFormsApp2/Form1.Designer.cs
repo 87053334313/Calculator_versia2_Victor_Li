@@ -293,6 +293,7 @@ namespace WindowsFormsApp2
             this.buttonZapyataya.TabIndex = 19;
             this.buttonZapyataya.Text = ",";
             this.buttonZapyataya.UseVisualStyleBackColor = true;
+            this.buttonZapyataya.Click += new System.EventHandler(this.buttonZapyataya_Click);
             // 
             // buttonKoren
             // 
