@@ -293,6 +293,7 @@ namespace WindowsFormsApp2
                 {
                     bool ok = Program.Factorial(myI, out answer);
                     textBox1.Text = Convert.ToString(answer);
+                    Начало_Ввода = true;
                 }
                 else
                 {

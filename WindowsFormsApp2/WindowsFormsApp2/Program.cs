@@ -68,7 +68,7 @@ namespace WindowsFormsApp2
             }
             catch (Exception)
             {
-                MessageBox.Show("Произошло исключение я обнуляю результат для факториала");
+                MessageBox.Show("Произошло исключение \n скорее всего слишком большой результат \n я обнуляю результат для факториала");
                 f = 0;
                 ok = false;
             }
