@@ -145,6 +145,20 @@ namespace WindowsFormsApp2
                         textBox1.Text = Результат.ToString();
                         Число1 = Результат;
                     }
+                    else if (SuperZnak == "Возведение в степень")
+                    {
+                        try
+                        {
+                            Число4 = Число2;
+                            Результат = Math.Pow(Число1, Число2);
+                            textBox1.Text = Результат.ToString();
+                            Число1 = Результат;
+                        }
+                        catch(Exception ex)
+                        {
+                            MessageBox.Show("Протзошло исключение "+ex.Message);
+                        }
+                    }
 
                 }
                 else
