@@ -107,6 +107,7 @@ namespace WindowsFormsApp2
         }
         public static double Число4;
         public static string SuperZnak;
+        bool first;
         private void РАВНО(object sender,EventArgs e)
         {
             try
@@ -154,9 +155,63 @@ namespace WindowsFormsApp2
                             textBox1.Text = Результат.ToString();
                             Число1 = Результат;
                         }
-                        catch(Exception ex)
+                        catch (Exception ex)
                         {
-                            MessageBox.Show("Протзошло исключение "+ex.Message);
+                            MessageBox.Show("Протзошло исключение " + ex.Message);
+                        }
+                    }
+                    else if (SuperZnak == "Квадратный корень")
+                    {
+
+                        double резульатДляКорня = Math.Sqrt(Число4);
+                        textBox1.Text = резульатДляКорня.ToString();
+                        Число1 = резульатДляКорня;
+                        Начало_Ввода = true;
+                        Число4 = Число1;
+                    }
+                    else if (SuperZnak == "Обратное значение")
+                    {
+                        double результатОбратногоЗначения = 1 / Число4;
+                        textBox1.Text = результатОбратногоЗначения.ToString();
+                        Начало_Ввода = true;
+                        Число1 = результатОбратногоЗначения;
+                        Число4 = Число1;
+                        first = false;
+                    }
+                    else if (SuperZnak =="Определение квадрата")
+                    {
+                        
+                        double результатКвадрата = Число4 * Число4;
+                        textBox1.Text = результатКвадрата.ToString();
+                        Число1 = результатКвадрата;
+                        Число4 = Число1;
+                        Начало_Ввода = true;          
+                    }
+                    else if (SuperZnak=="Factorial")
+                    {
+                        MessageBox.Show("Здесь реалтзована идея : результат только нажатием на кнопку факториала \n без никаких равно несколько раз");
+                    }
+                    else if (SuperZnak=="KubKor")
+                    {
+                        double a = Число4;
+                        if (a >= 0)
+                        {
+                            double kubkor = Math.Pow(a, 1.0 / 3.0);
+                            textBox1.Text = Convert.ToString(kubkor);
+                            Число1 = kubkor;
+                            Число4 = Число1;
+                            Znak = null;
+                            SuperZnak = "KubKor";
+                        }
+                        else if (a < 0)
+                        {
+                            a = a * (-1);
+                            double kubkor = -1 * Math.Pow(a, 1.0 / 3.0);
+                            textBox1.Text = Convert.ToString(kubkor);
+                            Число1 = kubkor;
+                            Число4 = Число1;
+                            Znak = null;
+                            SuperZnak = "KubKor";
                         }
                     }
 
@@ -231,15 +286,22 @@ namespace WindowsFormsApp2
             Znak = null;
             Начало_Ввода = true;
         }
+        
         private void КвадратныйКорень(object sender, EventArgs e)
         {
             try
             {
-                Число1 = Convert.ToDouble(textBox1.Text);
-                Znak = "Квадратный корень";
-                double резульатДляКорня = Math.Sqrt(Число1);
-                textBox1.Text = резульатДляКорня.ToString();
-                Начало_Ввода = true;
+                
+                
+                    Число1 = Convert.ToDouble(textBox1.Text);
+                    Znak = "Квадратный корень";
+                    SuperZnak = Znak;
+                    double резульатДляКорня = Math.Sqrt(Число1);
+                    textBox1.Text = резульатДляКорня.ToString();
+                    Начало_Ввода = true;
+                    Число4 = резульатДляКорня;
+                    Число1 = резульатДляКорня;
+                    Znak = null;
             }
             catch (Exception a)
             {
@@ -262,6 +324,13 @@ namespace WindowsFormsApp2
                 double результатОбратногоЗначения = 1 / Число1;
                 textBox1.Text = результатОбратногоЗначения.ToString();
                 Начало_Ввода = true;
+                
+                Число1 = результатОбратногоЗначения;
+                Число4 = Число1;
+                SuperZnak = "Обратное значение";
+                Znak = null;
+                
+
             }
             catch (Exception a)
             {
@@ -299,7 +368,8 @@ namespace WindowsFormsApp2
                 {
                     MessageBox.Show("Вы вели не инт для расчета фактороиала!");
                 }
-            
+            Znak = null;
+            SuperZnak = "Factorial";
             
         }
 
@@ -336,13 +406,22 @@ namespace WindowsFormsApp2
             {
                 double kubkor = Math.Pow(a, 1.0 / 3.0);
                 textBox1.Text = Convert.ToString(kubkor);
+                Число1 = kubkor;
+                Число4 = Число1;
+                Znak = null;
+                SuperZnak = "KubKor";
             }
             else if (a < 0)
             {
                 a = a * (-1);
                 double kubkor = -1*Math.Pow(a, 1.0 / 3.0);
                 textBox1.Text = Convert.ToString(kubkor);
+                Число1 = kubkor;
+                Число4 = Число1;
+                Znak = null;
+                SuperZnak = "KubKor";
             }
+            
         }
 
         private void buttonStepen_Click(object sender, EventArgs e)
@@ -363,6 +442,12 @@ namespace WindowsFormsApp2
                 double результатКвадрата = Число1 * Число1;
                 textBox1.Text = результатКвадрата.ToString();
                 Начало_Ввода = true;
+                SuperZnak = "Определение квадрата";
+                Число1 = результатКвадрата;
+                Число4 = Число1;
+                Начало_Ввода = true;
+                Znak = null; 
+                
             }
             catch (Exception a)
             {
