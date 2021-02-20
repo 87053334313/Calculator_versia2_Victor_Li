@@ -121,6 +121,7 @@ namespace WindowsFormsApp2
                     if (SuperZnak == "+")
                     {
                         Число4 = Число2;
+                        Число1 = Convert.ToDouble(textBox1.Text);
                         Результат = Число1 + Число4;
                         textBox1.Text = Результат.ToString();
                         Число1 = Результат;
@@ -128,6 +129,7 @@ namespace WindowsFormsApp2
                     else if (SuperZnak == "-")
                     {
                         Число4 = Число2;
+                        Число1 = Convert.ToDouble(textBox1.Text);
                         Результат = Число1 - Число4;
                         textBox1.Text = Результат.ToString();
                         Число1 = Результат;
@@ -135,6 +137,7 @@ namespace WindowsFormsApp2
                     else if (SuperZnak == "*")
                     {
                         Число4 = Число2;
+                        Число1 = Convert.ToDouble(textBox1.Text);
                         Результат = Число1 * Число4;
                         textBox1.Text = Результат.ToString();
                         Число1 = Результат;
@@ -142,6 +145,7 @@ namespace WindowsFormsApp2
                     else if (SuperZnak == "/")
                     {
                         Число4 = Число2;
+                        Число1 = Convert.ToDouble(textBox1.Text);
                         Результат = Число1 / Число4;
                         textBox1.Text = Результат.ToString();
                         Число1 = Результат;
@@ -151,6 +155,7 @@ namespace WindowsFormsApp2
                         try
                         {
                             Число4 = Число2;
+                            Число1 = Convert.ToDouble(textBox1.Text);
                             Результат = Math.Pow(Число1, Число2);
                             textBox1.Text = Результат.ToString();
                             Число1 = Результат;
