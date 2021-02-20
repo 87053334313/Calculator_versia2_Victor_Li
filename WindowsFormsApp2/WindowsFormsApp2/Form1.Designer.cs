@@ -367,6 +367,7 @@ namespace WindowsFormsApp2
             this.button17.Size = new System.Drawing.Size(137, 48);
             this.button17.TabIndex = 24;
             this.button17.Text = "+-";
+            this.toolTip1.SetToolTip(this.button17, "Меняет знак числа");
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click_1);
             // 
