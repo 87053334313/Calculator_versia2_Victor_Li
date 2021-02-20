@@ -107,7 +107,7 @@ namespace WindowsFormsApp2
         }
         public static double Число4;
         public static string SuperZnak;
-        bool first;
+        
         private void РАВНО(object sender,EventArgs e)
         {
             try
@@ -181,7 +181,7 @@ namespace WindowsFormsApp2
                         Начало_Ввода = true;
                         Число1 = результатОбратногоЗначения;
                         Число4 = Число1;
-                        first = false;
+                        
                     }
                     else if (SuperZnak =="Определение квадрата")
                     {

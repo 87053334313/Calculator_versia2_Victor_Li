@@ -24,7 +24,7 @@ namespace WindowsFormsApp2
                 double D = b * b - 4 * a * c;
                 if (D > 0)
                 {
-                    string strX = "имеется два корня уравнения, т.к. Дискреминант больше нуля  ";
+                    string strX = "имеется два корня уравнения, т.к. Дискриминант больше нуля.  ";
                     double x1 = ((-b + (Math.Sqrt(D))) / (2 * a));
                     double x2 = ((-b - (Math.Sqrt(D))) / (2 * a));
                     string Sx1 = "Первый корень x1=" + x1.ToString() + "   ";
@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
                 }
                 else if (D == 0)
                 {
-                    string strx = "имеется олин корень уравнения, т.к. Дискреминано равен нулю";
+                    string strx = "имеется один корень уравнения, т.к. Дискриминант равен нулю. ";
                     double x = (-b) / (2 * a);
                     string sx = "Корень уравненя=" + x.ToString();
                     string otvet = strx + sx;
@@ -42,7 +42,7 @@ namespace WindowsFormsApp2
                 }
                 else
                 {
-                    string strX = "Нет корней, т.к. Дискрименант меньше нуля";
+                    string strX = "Нет корней, т.к. Дискриминант меньше нуля.";
                     string otvet = strX;
                     return otvet;
                 }

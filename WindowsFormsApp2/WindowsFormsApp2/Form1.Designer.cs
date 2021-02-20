@@ -165,6 +165,7 @@ namespace WindowsFormsApp2
             // 
             // button11
             // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button11.Location = new System.Drawing.Point(338, 288);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(137, 48);
@@ -175,6 +176,7 @@ namespace WindowsFormsApp2
             // 
             // button12
             // 
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button12.Location = new System.Drawing.Point(338, 234);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(64, 48);
@@ -186,6 +188,7 @@ namespace WindowsFormsApp2
             // 
             // button13
             // 
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button13.Location = new System.Drawing.Point(411, 234);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(64, 48);
@@ -196,6 +199,7 @@ namespace WindowsFormsApp2
             // 
             // button14
             // 
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button14.Location = new System.Drawing.Point(338, 160);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(64, 48);
@@ -206,6 +210,7 @@ namespace WindowsFormsApp2
             // 
             // button15
             // 
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button15.Location = new System.Drawing.Point(411, 160);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(64, 48);
@@ -270,8 +275,8 @@ namespace WindowsFormsApp2
             // переходДляКвадратногоУравненияToolStripMenuItem
             // 
             this.переходДляКвадратногоУравненияToolStripMenuItem.Name = "переходДляКвадратногоУравненияToolStripMenuItem";
-            this.переходДляКвадратногоУравненияToolStripMenuItem.Size = new System.Drawing.Size(218, 20);
-            this.переходДляКвадратногоУравненияToolStripMenuItem.Text = "переход для квадратного уравнения";
+            this.переходДляКвадратногоУравненияToolStripMenuItem.Size = new System.Drawing.Size(248, 20);
+            this.переходДляКвадратногоУравненияToolStripMenuItem.Text = "открыть окно для квадратного уравнения";
             this.переходДляКвадратногоУравненияToolStripMenuItem.Click += new System.EventHandler(this.переходДляКвадратногоУравненияToolStripMenuItem_Click);
             // 
             // buttonStepen
@@ -287,6 +292,7 @@ namespace WindowsFormsApp2
             // 
             // buttonZapyataya
             // 
+            this.buttonZapyataya.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonZapyataya.Location = new System.Drawing.Point(227, 288);
             this.buttonZapyataya.Name = "buttonZapyataya";
             this.buttonZapyataya.Size = new System.Drawing.Size(59, 48);
@@ -355,6 +361,7 @@ namespace WindowsFormsApp2
             // 
             // button17
             // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button17.Location = new System.Drawing.Point(338, 93);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(137, 48);
