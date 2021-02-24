@@ -48,10 +48,10 @@ namespace WindowsFormsApp2
                 }
             
         }
-        public static bool Factorial(int n, out int answer)
+        public static bool Factorial(double n, out double answer)
         {
-            int k;
-            int f;
+            double k;
+            double f;
             bool ok = true;
             if (n < 0)
                 ok = false;
@@ -68,7 +68,7 @@ namespace WindowsFormsApp2
             }
             catch (Exception)
             {
-                MessageBox.Show("Произошло исключение \n скорее всего слишком большой результат \n я обнуляю результат для факториала");
+                MessageBox.Show("Произошло исключение \n скорее всего слишком большой результат (больше допустимого для decimal) \n я обнуляю результат для факториала \n для decimal max=27!");
                 f = 0;
                 ok = false;
             }

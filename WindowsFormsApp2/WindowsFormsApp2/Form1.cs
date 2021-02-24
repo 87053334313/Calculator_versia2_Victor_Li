@@ -358,11 +358,11 @@ namespace WindowsFormsApp2
 
         private void buttonFactorial_Click(object sender, EventArgs e)
         {
-            
-                int myI;
-                int answer;
+
+            long myI;
+            double answer;
                 string s = textBox1.Text;
-                bool CheckInt = Int32.TryParse(s, out myI);
+                bool CheckInt = Int64.TryParse(s, out myI);
                 if (CheckInt == true)
                 {
                     bool ok = Program.Factorial(myI, out answer);
