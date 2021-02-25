@@ -47,6 +47,7 @@ namespace WindowsFormsApp2
             this.buttonKoren.Click += new System.EventHandler(this.КвадратныйКорень);
             this.buttonObratnoeZnachenie.Click += new System.EventHandler(this.ОбратноеЗначение);
             this.buttonKvadratChisla.Click += new System.EventHandler(this.ОпределениеКвадратаЧисла);
+            textBox1.Text = "0";
         }
         private void ЦИФРА(object sender, EventArgs e)
         {
@@ -362,6 +363,12 @@ namespace WindowsFormsApp2
             long myI;
             double answer;
                 string s = textBox1.Text;
+            if (Convert.ToDouble(s) > 170)
+            {
+                MessageBox.Show("Слишком большое число для расчета факториала");
+            }
+            else
+            {
                 bool CheckInt = Int64.TryParse(s, out myI);
                 if (CheckInt == true)
                 {
@@ -373,8 +380,9 @@ namespace WindowsFormsApp2
                 {
                     MessageBox.Show("Вы вели не инт для расчета фактороиала!");
                 }
-            Znak = null;
-            SuperZnak = "Factorial";
+                Znak = null;
+                SuperZnak = "Factorial";
+            }
             
         }
 
